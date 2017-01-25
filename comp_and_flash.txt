@@ -1,0 +1,2 @@
+avr-gcc -mmcu=atmega328p -Os ledtimer.cc -o ledtimer.o
+sudo avrdude -c usbtiny -p m328p -e -U flash:w:ledtimer.o
